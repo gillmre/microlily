@@ -1,6 +1,6 @@
 # microlily: Microtonal support for Lilypond
 
-Original code by Graham Breed at https://bitbucket.org/x31eq/microlily.
+Code by Graham Breed, forked from https://bitbucket.org/x31eq/microlily.
 
 This package adds support for microtonal notation in Lilypond, including Sagittal and Extended Helmholtz-Ellis notations.
 
@@ -9,8 +9,6 @@ The Sagittal font and musical examples were provided by Dave Keenan and George S
 The HE font for Extended Helmholtz-Ellis Pitch Notation is shareware by [Marc Sabat](http://www.marcsabat.com/) and can be download [here](http://www.marcsabat.com/pdfs/HE-font-2011.zip). The HE font should be installed as a system font.
 
 This package includes the Sagittal font. More information at http://sagittal.org.
-
-
 
 ## Installation
 
@@ -25,7 +23,7 @@ lyp install microlily
 ```lilypond
 \require "microlily"
 
-
+...
 ```
 
 (For actual examples look at the [test](https://github.com/noteflakes/lyp-microlily/tree/master/test) directory)
