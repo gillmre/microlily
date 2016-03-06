@@ -25,12 +25,12 @@ lyp install microlily
 ```lilypond
 \require "microlily"
 
-...
+
 ```
 
-(For examples look at the test directory)
+(For actual examples look at the [test](https://github.com/noteflakes/lyp-microlily/tree/master/test) directory)
 
-Yes, as far as documentation goes this README kinda sucks. Pull requests are welcome!
+(Yes, as far as documentation goes this README kinda sucks. Pull requests are welcome!)
 
 ### Available commands
 
@@ -38,7 +38,7 @@ Yes, as far as documentation goes this README kinda sucks. Pull requests are wel
 
 `\he` - Extended Helmholtz-Ellis JI Pitch Notation support.
 
-`\ji12` - just intonation written as 12 note equal temperament (this makes sense when used with cents).
+`\"ji12"` - just intonation written as 12 note equal temperament (this makes sense when used with cents).
 
 `\promethean` - more precise accidentals than Athenian.
 
@@ -46,31 +46,32 @@ Yes, as far as documentation goes this README kinda sucks. Pull requests are wel
 
 `\sagji` - common code for Sagittal with just intonation.
 
-`\sag60` - ratios mapped to 60-equal.
+`\"sag60"` - ratios mapped to 60-equal.
 
-`\sag72` - ratios mapped to 72-equal.
+`\"sag72"` - ratios mapped to 72-equal.
 
-`\sagji224` - Athenian accidentals but consistently applied according to 224-equal.
+`\"sagji224"` - Athenian accidentals but consistently applied according to 224-equal.
 
-`\sagji60` - just intonation with accidentals for 60-equal.
+`\"sagji60"` - just intonation with accidentals for 60-equal.
 
-`\sagji72` - just intonation with accidentals for 72-equal.
+`\"sagji72"` - just intonation with accidentals for 72-equal.
 
 `\trojan` - common code for Trojan notations of JI.
 
-`\trojan60` - just intonation rounded off to 60-EDO.
+`\"trojan60"` - just intonation rounded off to 60-EDO.
 
-`\trojan72` - just intonation rounded off to 72-EDO.
+`\"trojan72"` - just intonation rounded off to 72-EDO.
 
+**Note**: as the original code is not very DRY-ish, not namespaced nor modularized, I took the approach of defining commands for loading each of the original files. This way the original functionality is maintained with a minimum of fuss. If anybody feels like improving the API, please do so! - Sharon Rosner
 
 ### Examples
 
-- [ratios.ly]() - example of JI duplicating the Sagittal paper.
-- [harmonics.ly]() - the harmonic series in Extended Helmholtz-Ellis Pitch Notation.
-- [subharmonics.ly]() - another Extended Helmholtz-Ellis Pitch Notation example matching one of the defining papers.
-- [fig6.ly]() - another Sagittal example.
+- [fig6.ly](https://github.com/noteflakes/lyp-microlily/blob/master/test/fig6.ly) - another Sagittal example.
+- [harmonics.ly](https://github.com/noteflakes/lyp-microlily/blob/master/test/harmonics.ly) - the harmonic series in Extended Helmholtz-Ellis Pitch Notation.
+- [ratios.ly](https://github.com/noteflakes/lyp-microlily/blob/master/test/ratios.ly) - example of JI duplicating the Sagittal paper.
+- [subharmonics.ly](https://github.com/noteflakes/lyp-microlily/blob/master/test/subharmonics.ly) - another Extended Helmholtz-Ellis Pitch Notation example matching one of the defining papers.
 
 ### Utilities
 
-[addmts.py](), [addmts.py3]() - Retune output MIDI files to use the MIDI Tuning Standard.
+[addmts.py](https://github.com/noteflakes/lyp-microlily/blob/master/etc/addmts.py), [addmts.py3](https://github.com/noteflakes/lyp-microlily/blob/master/etc/addmts.py3) - Retune output MIDI files to use the MIDI Tuning Standard.
 

@@ -4,6 +4,7 @@
 "he"          = \pincludeOnce #(lyp:join-path microlily-dir "he.ly")
 "ji12"        = \pincludeOnce #(lyp:join-path microlily-dir "ji12.ly")
 "promethean"  = \pincludeOnce #(lyp:join-path microlily-dir "promethean.ly")
+"regular"     = \pincludeOnce #(lyp:join-path microlily-dir "regular.ly")
 "sag60"       = \pincludeOnce #(lyp:join-path microlily-dir "sag60.ly")
 "sag72"       = \pincludeOnce #(lyp:join-path microlily-dir "sag72.ly")
 "saget"       = \pincludeOnce #(lyp:join-path microlily-dir "saget.ly")
